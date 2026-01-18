@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Пищевые добавки (E) — мини-база</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>Пищевые добавки (E) — мини-база</h1>
+    <p class="hint">
+      Введи <b>E-номер</b> (например <b>E211</b>) или <b>название</b> (например <b>сорбат калия</b>).
+    </p>
+
+    <div class="row">
+      <input id="q" placeholder="E211 / E-330 / бензоат натрия..." autocomplete="off" />
+      <button id="btn">Найти</button>
+    </div>
+
+    <div class="chips" id="chips"></div>
+
+    <div id="status" class="status"></div>
+
+    <section id="card" class="card hidden">
+      <h2 id="title"></h2>
+      <p id="meta" class="meta"></p>
+
+      <div class="block">
+        <h3>1) Характеристики (свойства)</h3>
+        <p id="ch"></p>
+      </div>
+
+      <div class="block">
+        <h3>2) Происхождение (из чего делается)</h3>
+        <p id="or"></p>
+      </div>
+
+      <div class="block">
+        <h3>3) Возможный вред (опасность)</h3>
+        <p id="dn"></p>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <small>Справочная информация для школьного проекта. Базу можно расширять в файле <b>additives.js</b>.</small>
+    </footer>
+  </main>
+
+  <script src="additives.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
