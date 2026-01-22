@@ -67,3 +67,20 @@ h3 { margin: 0 0 6px; font-size: 16px; }
 p { margin: 0; color: #d8e2f2; line-height: 1.5; }
 
 .foot { margin-top: 22px; color: #93a3ba; }
+.card {
+  transform-origin: center;
+}
+
+.card.hidden { 
+  display: none;
+}
+
+.card.show {
+  animation: pop 260ms cubic-bezier(.2, 1.6, .35, 1) both;
+}
+
+@keyframes pop {
+  0%   { transform: scale(0.75); opacity: 0; }
+  70%  { transform: scale(1.06); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
